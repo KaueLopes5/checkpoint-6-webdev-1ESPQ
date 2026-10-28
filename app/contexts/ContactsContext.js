@@ -40,7 +40,7 @@ export const ContactsProvider = ({ children }) => {
     }, []);
 
     useEffect(() => {
-        // TODO: carregar contatos ao iniciar
+        fetchContacts();
     }, [fetchContacts]);
 
     const getContactById = useCallback(
