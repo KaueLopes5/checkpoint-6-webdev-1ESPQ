@@ -1,5 +1,5 @@
 import "./globals.css";
-import { ContactsProvider } from "../contexts/ContactsContext";
+import { ContactsProvider } from "../app/contexts/ContactsContext";
 
 export const metadata = {
   title: "Checkpoint 6 – Contatos",
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body>
-        <ContactsProvider>{children} </ContactsProvider>
+        <ContactsProvider>{children}</ContactsProvider>
       </body>
     </html>
   );

@@ -1,10 +1,12 @@
+"use client";
+
 import {
     createContext,
     useContext,
     useState,
     useEffect,
     useCallback,
-    useclient,
+    
 } from "react";
 import contactsApi from "../services/contactsApi";
 
@@ -51,7 +53,7 @@ export const ContactsProvider = ({ children }) => {
     );
 
     return (
-        <ContactsContext.Provider value={{ contacts, loading, error, getContactById, fetch }}>
+        <ContactsContext.Provider value={{ contacts, loading, error, getContactById, fetchContacts}}>
             {children}
         </ContactsContext.Provider>
     );
